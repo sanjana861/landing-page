@@ -2,7 +2,7 @@
 
 Vertex is a premium-quality, high-performance, and fully responsive business landing page designed to showcase professional frontend engineering and modern UI/UX design. It is built as a static site and is ready to deploy for free.
 
-🚀 **Live Demo:** [http://brilliant-truffle-4b2c54.netlify.app](http://brilliant-truffle-4b2c54.netlify.app)
+🚀 **Live Demo:** [http://business-landing-page.netlify.app](http://business-landing-page.netlify.app)
 
 ---
 
