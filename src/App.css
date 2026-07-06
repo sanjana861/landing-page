@@ -1,0 +1,64 @@
+/* Glassmorphism custom styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Gradient backgrounds for accent cards */
+.gradient-accent {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+}
+
+.dark .gradient-accent {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
+}
+
+/* Text hover animations for menus */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-indigo-600);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.dark .nav-link::after {
+  background-color: var(--color-indigo-400);
+}
+
+/* Active links */
+.nav-link-active::after {
+  width: 100%;
+}
+
+/* Premium shadows */
+.shadow-premium {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+.dark .shadow-premium {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 40px rgba(79, 70, 229, 0.15);
+}
+.dark .shadow-glow {
+  box-shadow: 0 0 50px rgba(99, 102, 241, 0.25);
+}
